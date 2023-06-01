@@ -7,7 +7,8 @@ import Proces from "./Container/Process/Proces";
 import BlogNews from "./Container/BlogNews/BlogNews";
 import Blog from "./Container/Blog";
 import Layout from "./Container/Layout";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,Navigate } from "react-router-dom";
+import { aboutUrl, contactUrl, homeUrl, productUrl, revolutionaryUrl } from "./constants";
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<Aboutus />} />
-            <Route path="/revolutionary" element={<Proces />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/blog-news" element={<BlogNews />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path={homeUrl} element={<Home />} />
+            <Route path={aboutUrl} element={<Aboutus />} />
+            <Route path={revolutionaryUrl} element={<Proces />} />
+            <Route path={productUrl} element={<Product />} />
+            <Route path={contactUrl} element={<Contact />} />
+            {/* <Route path="/blog-news" element={<BlogNews />} /> */}
+            {/* <Route path="/blog" element={<Blog />} /> */}
+            <Route path='*' element={<Navigate to={homeUrl}/>} />
           </Routes>
         </Layout>
       </BrowserRouter>

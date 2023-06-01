@@ -1,0 +1,5 @@
+export const homeUrl='/'
+export const aboutUrl='/about-bhanderi-lab-grown-manufacturer'
+export const contactUrl='/contact-bhanderi-diamonds'
+export const revolutionaryUrl='/revolutionary-lab-grown-diamond'
+export const productUrl='/lab-grown-diamonds'

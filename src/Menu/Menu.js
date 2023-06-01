@@ -3,15 +3,16 @@ import menuArrow from "../imges/menuArrow.png";
 import closeIcon from "../imges/close.png";
 import { useNavigate } from "react-router-dom";
 import "./Menu.scss";
+import { aboutUrl, contactUrl, homeUrl, productUrl, revolutionaryUrl } from "../constants";
 
 const Menus = [
-  { title: "Home", link: "/" },
-  { title: "About us", link: "/about" },
-  { title: "Product ", link: "/product" },
-  { title: "Revolutionary ", link: "/revolutionary" },
-  { title: "Blog & News", link: "/blog-news" },
+  { title: "Home", link: homeUrl },
+  { title: "About us", link: aboutUrl },
+  { title: "Product ", link: productUrl },
+  { title: "Revolutionary ", link: revolutionaryUrl },
+  // { title: "Blog & News", link: "/blog-news" },
   // { title: "Blog", link: "/blog" },
-  { title: "Contact us", link: "/contact" },
+  { title: "Contact us", link: contactUrl },
 ];
 const Menu = ({ setOpen }) => {
   const navigate = useNavigate();
