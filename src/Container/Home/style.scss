@@ -1,0 +1,1258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+.home-page {
+  .mobile-event-wrapper {
+    display: none;
+  }
+  .web-ebent-wrapper {
+    display: block;
+  }
+  .hero-sec-1 {
+    background-image: url(../../imges/banner1.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 285.66px 0 472.66px;
+    .text-wrapper {
+      .title-text {
+        font-family: "Prumo Deck";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 64px;
+        line-height: 115.53%;
+        color: #000000;
+      }
+      .subtitle-text {
+        width: 100%;
+        max-width: 543px;
+        font-family: var(--main-font-family);
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #024638;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  .hero-sec-2 {
+    background-image: url(../../imges/reactor.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container-wrapper {
+      .text-wrapper {
+        color: #efedf2;
+        padding: 325px 0 269px;
+        .title-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 128px;
+          line-height: 154px;
+        }
+        .bolder-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 96px;
+          line-height: 115px;
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          color: #efedf2;
+        }
+        .subtitle-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 122%;
+          text-transform: uppercase;
+          color: #efedf2;
+        }
+        .desc-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 135.94%;
+
+          color: #efedf2;
+        }
+      }
+    }
+  }
+  .hero-sec-3 {
+    background-image: url(../../imges/Blgs.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container-wrapper {
+      .text-wrapper {
+        color: #efedf2;
+        padding: 325px 0 269px;
+        .title-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 128px;
+          line-height: 154px;
+        }
+        .rnd-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 114.03%;
+          color: #efedf2;
+          width: 545px;
+          margin-top: 63px;
+          text-transform: uppercase;
+        }
+        .subtitle-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 96px;
+          line-height: 115px;
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          width: 444px;
+          color: #efedf2;
+        }
+        .desc-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 135.94%;
+          display: flex;
+          width: 496px;
+          align-items: center;
+          text-transform: capitalize;
+          color: #efedf2;
+        }
+      }
+    }
+  }
+  .hero-sec-4 {
+    background-image: url(../../imges/Blgd.png);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container-wrapper {
+      .text-wrapper {
+        color: #efedf2;
+        padding: 325px 0 269px;
+        .title-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 128px;
+          line-height: 154px;
+        }
+        .bolder-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 96px;
+          line-height: 115px;
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          color: #efedf2;
+        }
+        .subtitle-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 46px;
+        }
+        .other-subtitle-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 27px;
+        }
+        .desc-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 27px;
+          max-width: 494px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .hero-sec-5 {
+    background-image: url(../../imges/TPbg.png);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .text-wrapper {
+      padding-top: 200px;
+      color: #efedf2;
+      // align-items: center;
+      gap: 93px;
+      .crafted-diamond-img {
+        width: 100%;
+        max-width: 960px;
+        img {
+          width: 100%;
+        }
+      }
+      .mobile-type-text,
+      .mobile-diamonds-text {
+        display: none;
+      }
+      .crafted-diamond-details {
+        margin-top: 75px;
+        .type-text {
+          text-transform: uppercase;
+          color: #ffffff;
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 64px;
+          line-height: 77px;
+        }
+        .diamonds-text {
+          text-transform: capitalize;
+          color: #ffffff;
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 200;
+          font-size: 64px;
+          line-height: 90px;
+        }
+      }
+      .desc-text {
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 135.94%;
+        /* or 27px */
+
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        text-transform: capitalize;
+
+        color: #efedf2;
+
+        width: 100%;
+        max-width: 557px;
+      }
+      .read-more-btn {
+        background-color: #a4c89a;
+      }
+    }
+  }
+  .hero-sec-6 {
+    background-color: #ffffff;
+
+    .text-wrapper {
+      align-items: center;
+      gap: 93px;
+      padding: 78px 0 140px;
+      .main-title {
+        font-family: "Prumo Deck";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 135.03%;
+
+        text-transform: capitalize;
+
+        color: #000000;
+      }
+      .network-partner-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 86px;
+        .audience-wrapper {
+          width: 100%;
+          max-width: 454px;
+          .title {
+            font-family: "Prumo Deck";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 51px;
+            margin-bottom: 31px;
+          }
+          .wrapper {
+            height: 100%;
+            position: relative;
+            img {
+            }
+            .desc-btn {
+              position: absolute;
+              bottom: 0px;
+              right: 0;
+              .title {
+                display: none;
+              }
+              .audience-desc {
+                font-family: "IBM Plex Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                /* line-height: 135.94%; */
+                // display: flex;
+                // align-items: center;
+                // text-align: justify;
+                // text-transform: capitalize;
+                max-width: 310px;
+                color: #000000;
+                width: 100%;
+              }
+              .read-more-btn {
+                margin-top: 31px;
+                color: #ffffff;
+                background-color: #024638;
+              }
+            }
+          }
+        }
+      }
+
+      .desc-text {
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        width: 100%;
+        max-width: 557px;
+      }
+    }
+  }
+  .hero-sec-7 {
+    background-color: #ffffff;
+    .text-wrapper {
+      align-items: center;
+      gap: 93px;
+      .benefits-lab-grow-dia {
+        display: flex;
+        align-items: center;
+        .benefits-lab-grow-dia-detail {
+          padding: 30px;
+          width: 100%;
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+
+          .benifit-text-wrapper {
+            font-family: "Prumo Deck";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 76px;
+            .benifit {
+              font-family: "Prumo Deck" !important;
+              font-style: normal !important;
+              font-weight: 400 !important;
+              font-size: 60px !important;
+              line-height: 118% !important;
+
+              color: #000000;
+            }
+            .benifit-span {
+              font-weight: 200 !important;
+            }
+          }
+          .benifit-p {
+            font-family: "IBM Plex Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140.62%;
+            /* identical to box height, or 28px */
+
+            color: #000000;
+            /* or 28px */
+          }
+          .benifit-list {
+            ul {
+              li {
+                font-family: "IBM Plex Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 140.62%;
+                /* identical to box height, or 28px */
+
+                color: #000000;
+              }
+            }
+          }
+        }
+        .benefits-lab-grow-dia-img {
+          width: 100%;
+          max-width: 50%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .desc-text {
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        width: 100%;
+        max-width: 557px;
+      }
+    }
+  }
+
+  .hero-sec-8 {
+    .type-diamond {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 90px;
+      color: #000;
+      span {
+        font-weight: 200;
+      }
+    }
+    .upcoming-item {
+      width: 100%;
+    }
+    .event-img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .event-discription {
+      background-color: #024638;
+      width: 100%;
+      padding: 15px;
+      color: #ffffff;
+      height: 350px;
+      h1 {
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 42px;
+      }
+      h3 {
+        margin-top: 14px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+      }
+      p {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 41px;
+      }
+    }
+  }
+  .hero-sec-9 {
+    padding-bottom: 60px;
+  }
+  .read-more-btn {
+    width: 100%;
+    max-width: 181px;
+    margin-top: 65px;
+    border: none;
+    outline: none;
+    padding: 13px 44px;
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135.94%;
+
+    text-transform: capitalize;
+
+    color: #000000;
+  }
+  .banner-section {
+    width: 100%;
+    height: 90px;
+    background: #024638;
+
+    .marquee {
+      position: relative;
+      width: 100vw;
+      max-width: 100%;
+      height: 200px;
+      overflow-x: hidden;
+    }
+
+    .track {
+      position: absolute;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee 32s linear infinite;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .marque-text {
+      font-family: "Prumo Deck";
+      font-style: normal;
+      font-weight: 200;
+      font-size: 64px;
+      line-height: 77px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      color: #efedf2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    .hero-sec-1 {
+      background-attachment: fixed;
+      padding: 667px 49px 67px;
+      .text-wrapper {
+        .title-text {
+          font-size: 40px;
+          line-height: 37px;
+          font-weight: 500;
+        }
+        .subtitle-text {
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 37px;
+        }
+      }
+    }
+    .hero-sec-2 {
+      .container-wrapper {
+        .text-wrapper {
+          padding: 505px 25px 108px;
+          .title-text {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 77px;
+            width: 100%;
+          }
+          .bolder-text {
+            font-family: "IBM Plex Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 144%;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #efedf2;
+            width: 100%;
+          }
+          .subtitle-text {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            width: 100%;
+          }
+          .desc-text {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
+          }
+          .read-more-btn {
+            display: none;
+          }
+        }
+      }
+    }
+    .hero-sec-3 {
+      .container-wrapper {
+        .text-wrapper {
+          padding: 544px 0 108px;
+          .title-text {
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 77px;
+            width: 100%;
+          }
+          .subtitle-text {
+            font-family: "IBM Plex Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 144%;
+            width: 100%;
+            /* or 46px */
+
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+
+            color: #efedf2;
+          }
+          .desc-text {
+            font-family: "IBM Plex Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 135.94%;
+            text-transform: capitalize;
+            width: 100%;
+            color: #efedf2;
+          }
+          .rnd-text {
+            font-family: "IBM Plex Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 135.94%;
+            text-transform: capitalize;
+            color: #efedf2;
+            margin-top: 15px;
+            width: 100%;
+          }
+          .read-more-btn {
+            display: none;
+          }
+        }
+      }
+    }
+    .hero-sec-4 {
+      .container-wrapper {
+        .text-wrapper {
+          padding: 571px 0 82px;
+          .title-text {
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 77px;
+          }
+          .subtitle-text {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 27px;
+          }
+          .bolder-text {
+            font-family: "IBM Plex Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 144%;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #efedf2;
+            width: 100%;
+          }
+          .desc-text,
+          .other-subtitle-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+          }
+          .read-more-btn {
+            display: none;
+          }
+        }
+      }
+    }
+    .hero-sec-5 {
+      .text-wrapper {
+        flex-direction: column;
+        padding: 55px 0 47px;
+        gap: 24px;
+        .mobile-type-text {
+          display: block;
+
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 58px;
+
+          text-transform: capitalize;
+
+          color: #ffffff;
+        }
+        .mobile-diamonds-text {
+          display: block;
+
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 200;
+          font-size: 48px;
+          line-height: 140.62%;
+          /* or 68px */
+
+          text-transform: capitalize;
+
+          color: #ffffff;
+        }
+        .crafted-diamond-img {
+          max-width: 100% !important;
+          img {
+            width: 100%;
+          }
+        }
+        .crafted-diamond-details {
+          padding: 20px;
+          .type-text {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            display: none;
+          }
+
+          .diamonds-text {
+            font-weight: 200;
+            font-size: 48px;
+            line-height: 68px;
+            display: none;
+          }
+        }
+        .desc-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 143.62%;
+          text-align: justify;
+          text-transform: capitalize;
+
+          color: #ffffff;
+          max-width: 100% !important;
+        }
+        .read-more-btn {
+          margin-top: 28px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .hero-sec-6 {
+      .text-wrapper {
+        .network-partner-wrapper {
+          .audience-wrapper {
+            height: 75vh;
+          }
+
+          flex-direction: column;
+          align-items: center;
+          .audience-wrapper {
+            .title {
+              display: none;
+            }
+            .wrapper {
+              .desc-btn {
+                .title {
+                  display: block;
+                  font-weight: 400;
+                  font-size: 36px;
+                  line-height: 51px;
+                }
+                .audience-desc {
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 22px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .hero-sec-7 {
+      .text-wrapper {
+        .benefits-lab-grow-dia {
+          flex-direction: column-reverse;
+          .benefits-lab-grow-dia-img {
+            max-width: 100%;
+          }
+          .benefits-lab-grow-dia-detail {
+            padding: 0;
+            margin-top: 28px;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            .benifit-text-wrapper {
+              .benifit,
+              .benifit-span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 40px;
+              }
+              .benifit-span {
+                margin: 0;
+              }
+            }
+            .benifit {
+              font-family: "Prumo Deck";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 64px;
+              line-height: 118%;
+              text-transform: capitalize;
+              color: #000000;
+            }
+            .benifit-p {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 22px;
+              margin: 10px;
+            }
+            .benifit-list {
+              justify-content: space-evenly;
+              .list-left ul li,
+              .list-right ul li {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .hero-sec-8 {
+      .type-diamond {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 68px;
+      }
+      .event-discription {
+        height: 275px !important;
+      }
+    }
+    .mobile-event-wrapper {
+      display: block;
+    }
+    .web-ebent-wrapper {
+      display: none;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .home-page {
+    .hero-sec-1 {
+      background-attachment: fixed;
+      background-image: url("../../imges/responsive/banner1re.png");
+      padding: 667px 0 67px;
+      .text-wrapper {
+        p {
+          margin: 0;
+        }
+        .title-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 115.53%;
+        }
+        .subtitle-text {
+          font-family: "Prumo Deck";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 115.53%;
+        }
+      }
+    }
+    .hero-sec-2 {
+      background-image: url("../../imges/responsive/reactorre.png");
+      background-position: initial;
+      .container-wrapper {
+        .text-wrapper {
+          padding: 572px 0 108px;
+        }
+      }
+    }
+    .hero-sec-3 {
+      background-image: url("../../imges/responsive/Blgsre.png");
+      background-position: initial;
+      .container-wrapper {
+        .text-wrapper {
+          .subtitle-text {
+          }
+        }
+      }
+    }
+    .hero-sec-4 {
+      background-image: url("../../imges/responsive/Group 34.png");
+      background-position: initial;
+      .container-wrapper {
+        .text-wrapper {
+          .title-text {
+          }
+        }
+      }
+    }
+    .hero-sec-5 {
+      .container-fluid {
+        padding: 0;
+      }
+      .text-wrapper {
+        align-items: initial;
+        .crafted-diamond-img {
+          padding-right: 20px;
+        }
+        .crafted-diamond-details {
+          padding: 0 15px;
+          .type-text {
+          }
+        }
+      }
+    }
+    .hero-sec-6 {
+      .text-wrapper {
+        .main-title {
+          display: none;
+        }
+        .network-partner-wrapper {
+          margin: 0;
+          .audience-wrapper {
+            margin-bottom: 70px;
+            .wrapper {
+              img {
+                width: 100%;
+              }
+              .desc-btn {
+                width: 100%;
+                max-width: 165px;
+                bottom: -45px;
+                .title {
+                  font-size: 36px;
+                  line-height: 51px;
+                }
+                .audience-desc {
+                  font-size: 16px;
+                  line-height: 22px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .hero-sec-7 {
+      .container-fluid {
+        padding: 0;
+      }
+      .text-wrapper {
+        .benefits-lab-grow-dia {
+          .benefits-lab-grow-dia-detail {
+            padding: 0 15px;
+            .benifit-list {
+              padding: 17px;
+            }
+            .benifit-text-wrapper {
+              font-size: 36px;
+              line-height: 40px;
+              .benifit {
+                font-size: 36px;
+                line-height: 40px;
+              }
+            }
+            .benifit-p {
+              font-size: 16px;
+              line-height: 22px;
+              margin: 15px 0 !important;
+              width: 100%;
+            }
+            .list-left,
+            .list-right {
+              ul {
+                padding-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .hero-sec-8 {
+      .type-diamond {
+        font-size: 32px;
+        line-height: 64px;
+      }
+      .upcoming-item {
+        .event-img {
+          .event-date {
+            width: 90px;
+            height: 90px;
+            font-size: 34px;
+          }
+        }
+        .event-discription {
+          height: 380px !important;
+        }
+        .event-discription {
+          h1 {
+            font-size: 32px;
+            line-height: 42px;
+          }
+          h3 {
+            font-size: 20px;
+            line-height: 25px;
+          }
+          p {
+            font-size: 32px;
+            line-height: 41px;
+          }
+        }
+      }
+    }
+    .mobile-event-wrapper {
+      display: block;
+    }
+    .web-ebent-wrapper {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1636px) {
+  .home-page {
+    .hero-sec-5 {
+      .text-wrapper {
+        padding-top: 150px;
+        .desc-text {
+          max-width: 507px;
+        }
+        .crafted-diamond-img {
+          max-width: 670px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .home-page {
+    .read-more-btn {
+      margin-top: 0px;
+    }
+    .hero-sec-5 {
+      .text-wrapper {
+        padding-top: 100px;
+        .desc-text {
+          max-width: 450px;
+        }
+        .crafted-diamond-img {
+          max-width: 620px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-page {
+    .read-more-btn {
+      margin-top: 0px;
+    }
+    .hero-sec-5 {
+      .text-wrapper {
+        .crafted-diamond-details {
+          margin-top: 0px;
+        }
+        padding-top: 80px;
+        .desc-text {
+          max-width: 400px;
+        }
+        .crafted-diamond-img {
+          max-width: 550px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .hero-sec-7 {
+      .text-wrapper {
+        .benefits-lab-grow-dia {
+          .benefits-lab-grow-dia-detail {
+            .benifit-text-wrapper {
+              .benifit {
+                font-family: "Prumo Deck" !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 40px !important;
+                line-height: 118% !important;
+                color: #000000;
+              }
+              .benifit-span {
+                font-weight: 200 !important;
+              }
+            }
+            .benifit-p {
+              font-family: "IBM Plex Sans";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 140.62%;
+              color: #000000;
+            }
+          }
+        }
+
+        .desc-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 27px;
+          width: 100%;
+          max-width: 557px;
+        }
+      }
+    }
+
+    .hero-sec-8 {
+      .event-discription {
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1062px) {
+  .home-page {
+    .read-more-btn {
+      margin-top: 0px;
+    }
+    .hero-sec-5 {
+      .text-wrapper {
+        gap: 40px;
+        .crafted-diamond-details {
+          margin-top: 0px;
+        }
+        padding-top: 50px;
+        .desc-text {
+          max-width: 350px;
+        }
+        .crafted-diamond-img {
+          max-width: 500px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .hero-sec-7 {
+      .text-wrapper {
+        .benefits-lab-grow-dia {
+          .benefits-lab-grow-dia-detail {
+            .benifit-text-wrapper {
+              .benifit {
+                font-family: "Prumo Deck" !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 35px !important;
+                line-height: 118% !important;
+                color: #000000;
+              }
+              .benifit-span {
+                font-weight: 200 !important;
+              }
+            }
+            .benifit-p {
+              font-family: "IBM Plex Sans";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 140.62%;
+              color: #000000;
+            }
+          }
+        }
+
+        .desc-text {
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 27px;
+          width: 100%;
+          max-width: 557px;
+        }
+      }
+    }
+    .hero-sec-8 {
+      .event-discription {
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .home-page {
+    .read-more-btn {
+      margin-top: 0px;
+    }
+    .hero-sec-5 {
+      .text-wrapper {
+        gap: 10px;
+        padding-top: 10px !important;
+        .crafted-diamond-details {
+          margin-top: 0px;
+          .type-text {
+            font-size: 50px;
+          }
+          .diamonds-text {
+            font-size: 50px;
+          }
+        }
+        padding-top: 30px;
+        .desc-text {
+          max-width: 270px;
+          font-size: 15px;
+        }
+        .crafted-diamond-img {
+          max-width: 460px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .hero-sec-8 {
+      .event-discription {
+        height: 600px;
+      }
+    }
+  }
+}

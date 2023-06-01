@@ -1,0 +1,521 @@
+.process-page {
+  .main-process {
+    background-image: url(../../imges/Maskgroup.png);
+    /* width: 1200px; */
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+
+  .daimond {
+    background-image: url(../../imges/Daimond.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+  }
+
+  .daimond h2 {
+    font-family: var(--main-font-family);
+    font-weight: 100;
+    color: #fff;
+    position: absolute;
+    left: 30%;
+    top: 0;
+    margin-bottom: 10px;
+  }
+
+  .daimond span {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 30%;
+    top: 3%;
+  }
+  .infa-right {
+    padding-left: 81px;
+    h5 {
+      width: 100%;
+      margin-bottom: 0;
+      font-family: "Prumo Deck";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 83px;
+      &:nth-child(2) {
+        color: #024638;
+      }
+    }
+    div {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 39px;
+      width: 100%;
+      max-width: 573px;
+    }
+    .infa-inner {
+      width: 100%;
+      max-width: 573px;
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 37px;
+      text-align: justify;
+      text-transform: capitalize;
+      color: #000000;
+      letter-spacing: 0;
+    }
+  }
+  .main-certifi {
+    h5 {
+      width: 100%;
+      font-family: "Prumo Deck";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 83px;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      color: #000000;
+      margin-bottom: 37px;
+    }
+    .certifi2 {
+      margin-bottom: 51px;
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: justify;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      width: 100%;
+      color: #000000;
+    }
+    .certifi1 {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: #024638;
+    }
+  }
+  .div-wrapper {
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container-fluid {
+      .proccess-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 184px 0;
+        width: 100%;
+        max-width: 1295px;
+        margin: 0 auto;
+        .left-side-wrapper {
+          display: flex;
+          justify-content: center;
+          p {
+            margin: 0;
+            width: 100%;
+            max-width: 425px;
+            font-family: "Prumo Deck";
+            font-style: normal;
+            font-size: 64px;
+            line-height: 86px;
+            text-transform: capitalize;
+            font-weight: 300;
+            color: #ffffff;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+        .right-side-wrapper {
+          display: flex;
+          justify-content: center;
+          p {
+            margin: 0;
+            width: 100%;
+            max-width: 493px;
+            font-family: "IBM Plex Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: justify;
+            text-transform: capitalize;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .water-wrapper {
+    background-image: url("../../imges/water.png");
+  }
+  .polluting-wrapper {
+    background-image: url("../../imges/Energy.png");
+  }
+  .earth-wrapper {
+    background-image: url("../../imges/Earth.png");
+  }
+  .toxic-wrapper {
+    background-image: url("../../imges/air.png");
+  }
+  .conflict-wrapper {
+    background-image: url("../../imges/contrac.png");
+  }
+  .destructive-wrapper {
+    background-image: url("../../imges/lend.png");
+  }
+}
+@media (max-width: 1440px) {
+  .process-page {
+    .main-process {
+      background-size: cover;
+      .main-process {
+        left: 24%;
+      }
+    }
+    .main-infa {
+      .infa-left {
+        img {
+          height: 100%;
+        }
+      }
+      .infa-right {
+        padding-left: 0;
+        h5 {
+          font-size: 46px;
+          line-height: 52px;
+          &:nth-child(2) {
+            margin-bottom: 16px;
+          }
+        }
+        div {
+          font-size: 20px;
+          line-height: 36px;
+        }
+        .infa-inner {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+    .main-certifi {
+      padding-top: 143px;
+      padding-bottom: 143px;
+      h5 {
+        font-size: 50px;
+        line-height: 58px;
+      }
+      .certifi2 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .certifi1 {
+        font-size: 21px;
+        line-height: 26px;
+      }
+    }
+    .div-wrapper {
+      .container-fluid {
+        .proccess-wrapper {
+          padding: 100px 0;
+          .left-side-wrapper {
+            p {
+              max-width: 390px;
+              span {
+              }
+            }
+          }
+          .right-side-wrapper {
+            p {
+              max-width: 425px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .process-page {
+    .main-process {
+      .daimond {
+        left: 15%;
+        h2,
+        span {
+          left: 41%;
+        }
+      }
+    }
+    .main-infa {
+      .infa-right {
+        h5 {
+          font-size: 36px;
+          line-height: 44px;
+          &:nth-child(2) {
+          }
+        }
+        div {
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
+        .infa-inner {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+    .main-certifi {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      h5 {
+        font-size: 40px;
+        line-height: 46px;
+      }
+      .certifi2 {
+      }
+      .certifi1 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    .div-wrapper {
+      .container-fluid {
+        .proccess-wrapper {
+          padding: 100px 0;
+          .left-side-wrapper {
+            p {
+              max-width: 280px;
+              font-size: 46px;
+              line-height: 50px;
+            }
+          }
+          .right-side-wrapper {
+            p {
+              font-size: 20px;
+              line-height: 24px;
+              max-width: 300px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .process-page {
+    .main-process {
+      .daimond {
+        left: 0;
+        h2,
+        span {
+          left: 55%;
+        }
+      }
+    }
+    .main-certifi {
+      h5 {
+      }
+      .certifi2 {
+      }
+      .certifi1 {
+      }
+    }
+    .carti-right {
+      padding: 0 0 100px 0;
+    }
+    .div-wrapper {
+      .container-fluid {
+        .proccess-wrapper {
+          padding: 137px 25px 28px;
+          .left-side-wrapper {
+            p {
+              max-width: 100%;
+              span {
+              }
+            }
+          }
+          .right-side-wrapper {
+            margin-top: 25px;
+            p {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .water-wrapper {
+      background-image: url("../../imges/responsive/water.png");
+    }
+    .polluting-wrapper {
+      background-image: url("../../imges/responsive/energy.png");
+    }
+    .earth-wrapper {
+      background-image: url("../../imges/responsive/earth.png");
+    }
+    .toxic-wrapper {
+      background-image: url("../../imges/responsive/air.png");
+    }
+    .conflict-wrapper {
+      background-image: url("../../imges/responsive/conflict.png");
+    }
+    .destructive-wrapper {
+      background-image: url("../../imges/responsive/lend.png");
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .process-page {
+    .main-process {
+      .daimond {
+        left: 0;
+        h2 {
+          color: black;
+          left: 47%;
+          transform: translate(-50%, 0);
+          top: 50%;
+        }
+        span {
+          color: #024638;
+          left: 50%;
+          transform: translate(-50%, 0);
+          top: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .process-page {
+    .main-process {
+      background-image: url(../../imges/responsive/Maskgroupre.png);
+      width: 100%;
+      height: 100vh;
+    }
+
+    .daimond {
+      background-image: none;
+      top: 28%;
+    }
+
+    .daimond h2 {
+      font-weight: 600;
+      color: black;
+      left: -6%;
+      top: 50%;
+    }
+
+    .daimond span {
+      color: #024638;
+      left: 0%;
+      font-size: 26px;
+      top: 54%;
+    }
+    .main-process {
+      height: 781px;
+      background-size: contain;
+      .daimond {
+        top: 50%;
+        h2 {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 38px;
+          width: 100%;
+          text-align: center;
+          left: 50%;
+        }
+        span {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 38px;
+          width: 100%;
+          text-align: center;
+          left: 50%;
+        }
+      }
+    }
+    .main-infa {
+      .infa-right {
+        h5 {
+          font-size: 30px;
+          line-height: 36px;
+        }
+        margin: 0;
+      }
+    }
+    .main-certifi {
+      padding-top: 0;
+      padding-bottom: 50px;
+      h5 {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .certifi2 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .certifi1 {
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    .carti-right {
+      padding: 50px 0;
+    }
+    .div-wrapper {
+      .container-fluid {
+        .proccess-wrapper {
+          padding: 137px 0 28px;
+          .left-side-wrapper {
+            p {
+              font-weight: 800;
+              font-size: 32px;
+              line-height: 43px;
+              span {
+              }
+            }
+          }
+          .right-side-wrapper {
+            margin-top: 25px;
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

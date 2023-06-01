@@ -1,0 +1,573 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+
+.firstblog {
+	/* background-image: url(../imges/firstBlog.jpg); */
+	width: 100%;
+	height: 100vh !important;
+	background-size: cover;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	/* display: none ; */
+}
+
+:root {
+	--main-font-family: "Prumo Deck";
+	--body-font-family: "IBM Plex Sans";
+}
+
+.carousel-inner {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.carousel-inner {
+	padding-top: 43.25%;
+	display: block;
+	content: "";
+}
+
+.carousel-item {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: skyblue;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 60%;
+	z-index: 9;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.caption h1 {
+	color: #fff;
+	font-size: 52px;
+	font-weight: 700;
+	margin-bottom: 23px;
+}
+
+.caption h2 {
+	color: rgba(255, 255, 255, .75);
+	font-size: 26px;
+	font-weight: 300;
+}
+
+a.big-button {
+	color: #fff;
+	font-size: 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #eb7a00;
+	background: rgba(255, 0, 0, 0.75);
+	padding: 28px 35px;
+	border-radius: 3px;
+	margin-top: 80px;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+a.big-button:hover {
+	text-decoration: none;
+	background: rgba(255, 0, 0, 0.9);
+}
+
+a.view-demo {
+	color: #fff;
+	font-size: 21px;
+	font-weight: 700;
+	display: inline-block;
+	margin-top: 35px;
+}
+
+a.view-demo:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+.carousel-indicators .active {
+	background: #fff;
+}
+
+.carousel-indicators li {
+	background: rgba(255, 255, 255, 0.4);
+	border-top: 20px solid;
+	z-index: 15;
+}
+
+
+.main-title {
+	margin-top: 10%;
+}
+
+.first-blog-img-sec {
+	background-image: url(../imges/the-cut-or-clarity-factor-which-matters-most-for-lab-grown-diamonds.jpg);
+	max-width: 100% !important;
+	background-size: cover;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position: center;
+	height: 300px;
+	background-color: #333;
+}
+
+.first-blog-img-sec1 {
+	max-width: 100% !important;
+	height: 300px;
+	background-color: #024638;
+}
+
+.first-blog-area {
+	height: 600px;
+}
+
+.quotes-bg {
+	width: 100%;
+	height: 1200px;
+	background-color: #024638;
+}
+
+.inner-blog-title {
+	font-family: var(--body-font-family);
+	font-size: 20px;
+	font-weight: 400;
+	padding: 3% 3% 2%;
+	color: #fff;
+}
+
+.inner-blog-date {
+	font-family: var(--body-font-family);
+	font-size: 12px;
+	font-weight: 400;
+	padding: 0% 3%;
+	color: #fff;
+}
+
+.inner-blog-descreption {
+	padding: 7% 3% 0%;
+	font-size: 12px;
+	font-weight: 400;
+	/* padding: 0% 3%; */
+	color: #fff;
+}
+
+.inner-blog-btn {
+	margin: 7% 3% 0%;
+	border: 0px;
+	width: 30%;
+	height: 9%;
+	background-color: #A4C89A;
+	color: #024638;
+	font-family: var(--body-font-family);
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.container {
+	max-width: 1300px !important;
+
+}
+
+.inner-blog-title-second {
+	font-family: var(--body-font-family);
+	font-size: 20px;
+	font-weight: 400;
+	padding: 3% 3% 5%;
+	color: #fff;
+}
+
+.second-blog-img-sec {
+	background-image: url(../imges/revolution-of-the-lab-grown-diamond-in-modern-times.jpg);
+	max-width: 100% !important;
+	background-size: cover;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	/* overflow: hidden; */
+	background-position: center;
+	height: 300px;
+	background-color: #333;
+}
+
+.second-blog-img-sec1 {
+	max-width: 100% !important;
+	height: 300px;
+	background-color: #024638;
+}
+
+.second-blog-area {
+	height: 600px;
+}
+
+.main-quotes {
+	font-family: var(--body-font-family);
+	color: #fff;
+	font-size: 40px;
+	font-weight: 400;
+	padding: 0% 5% 0% 17%;
+	/* text-align: justify; */
+	position: relative;
+}
+
+.quotes1 {
+	font-size: 122px !important;
+	font-family: var(--body-font-family);
+	position: absolute;
+	top: -3%;
+	left: 0;
+}
+
+.quotes2 {
+	font-size: 122px !important;
+	font-family: var(--body-font-family);
+	position: absolute;
+	right: 10%;
+	bottom: 0%;
+}
+
+.quotes-auther {
+	font-family: var(--body-font-family);
+	font-size: 22px !important;
+	font-weight: 400 !important;
+}
+
+.news {
+	background-image: url(../imges/Bhanderi.png);
+	height: 801px;
+	background-color: #024638;
+	margin-top: 20px;
+	background-repeat: no-repeat;
+	max-width: 65.8% !important;
+}
+
+.hi {
+	overflow: hidden;
+	max-width: 66.8% !important;
+}
+
+.news-title {
+	font-family: var(--body-font-family);
+	font-size: 24px;
+	font-weight: 400;
+	width: 92%;
+	padding: 5% 5% 0%;
+	color: #fff;
+}
+
+.inner-news {
+	width: 65.8%;
+	background-color: #024638;
+}
+
+.news-date {
+	font-family: var(--body-font-family);
+	font-size: 12px;
+	font-weight: 400;
+	width: 92%;
+	padding: 5% 5% 0%;
+	color: #fff;
+}
+
+.news-descript {
+	font-family: var(--body-font-family);
+	font-size: 17px;
+	font-weight: 400;
+	width: 72%;
+	padding: 5% 5% 0%;
+	color: #fff;
+}
+
+.news-btn {
+	margin: 5% 5% 5%;
+	border: 0;
+	width: 15%;
+	height: 7%;
+	background-color: #A4C89A;
+	color: #024638 !important;
+	font-family: var(--body-font-family);
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.news-btn a {
+	text-decoration: none;
+	color: #024638;
+}
+
+/* .hi1 {
+	overflow: hidden;
+	max-width: 66.8% !important;
+} */
+.small-blog {
+	position: absolute;
+	bottom: 0;
+	top: 248%;
+	left: 61.5%;
+	right: 0;
+	width: 22.6%;
+}
+
+.inner-news {
+	position: relative;
+	height: 43vh;
+}
+
+.blog-img1 {
+	background-image: url(../imges/man-made-diamonds-the-growing-competition-in-industry-thumb.jpg);
+}
+
+.blog-img2 {
+	background-image: url(../imges/how-does-a-cvd-diamond-work.jpg);
+}
+
+.blog-img3 {
+	background-image: url(../imges/image_2023_02_11T07_21_57_286Z.png);
+}
+
+.blog-img4 {
+	background-image: url(../imges/Choosing-lab-grown-diamonds-is-better-for-the-planet-Website-Thumbel.jpg);
+}
+
+.blog-img5 {
+	background-image: url(../imges/A-guide-to-the-grading-of-lab-grown-diamonds_Desktop_Thumbel.jpg);
+}
+
+.blog-img6 {
+	background-image: url(../imges/Planning-To-Buy-Lab-Grown-Diamond-Step-By-Step-Guide_Desktop_Thumbel.jpg);
+}
+
+.blog-img7 {
+	background-image: url(../imges/Everything-about-the-diamond-color-scale_Desktop_Thumbel.jpg);
+}
+
+.blog-img8 {
+	background-image: url(../imges/How-Are-Lab-Grown-Diamonds-Made_Thumbel_Desktop.jpg);
+}
+
+.blog-img9 {
+	background-image: url(../imges/A-Complete-Guide-To-CVD-Diamonds_Thumbel_Desktop.jpg);
+}
+
+.blog-img10 {
+	background-image: url(../imges/Gemological-Institute-Of-America-Certified-Diamonds_Dekstop_Thumbel.jpg);
+}
+
+.blog-img11 {
+	background-image: url(../imges/Which-Institute-Certifies-Lab-Grown-Diamond_Thumbel-Desktop.jpg);
+}
+
+.blog-img12 {
+	background-image: url(../imges/how-to-choose-lab-grown-diamond-shape_Desktop_Thumbel.jpg);
+}
+
+.blog-img13 {
+	background-image: url(../imges/The-Best-Manufacturer-And-Supplier-Of-Lab-Grown-Diamond_Thumbel_Desktop.jpg);
+}
+
+/* .blog-img14{
+	background-image: url(../imges/revolution-of-the-lab-grown-diamond-in-modern-times.jpg);
+} */
+.blog-img14 {
+	background-image: url(../imges/lab-grown-diamonds-vs-real-diamonds_Thumbel_Desktop.jpg);
+}
+
+.blog-img15 {
+	background-image: url(../imges/Sustainability_Thumbel.jpg);
+}
+
+/* .blog-img14{
+	background-image: url(../imges/What-Are-The-Most-Often-Asked-Questions-About-Lab-Grown-Diamond-thum.jpg);
+} */
+/* .blog-img15{
+	background-image: url(../imges/complete-guide-to-lab-grown-diamonds.jpg);
+} */
+/* .blog-img16{
+	background-image: url(../imges/lab-grown-diamonds-vs-real-diamonds_Thumbel_Desktop.jpg);
+} */
+.blog-img16 {
+	background-image: url(../imges/What-Are-The-Most-Often-Asked-Questions-About-Lab-Grown-Diamond-thum.jpg);
+}
+
+.blog-img17 {
+	background-image: url(../imges/complete-guide-to-lab-grown-diamonds.jpg);
+}
+
+.blog-img18 {
+	background-image: url(../imges/Market,-Future-and-History-Of-thumb.jpg);
+}
+
+.blog-img19 {
+	background-image: url(../imges/the-future-of-lab-grown-diamond.jpg);
+}
+
+.blog-img20 {
+	background-image: url(../imges/lab-grown-diamond-jewelry-market.jpg);
+}
+
+.blog-img21 {
+	background-image: url(../imges/how-are-lab-created-diamonds.jpg);
+}
+
+.blog-img22 {
+	background-image: url(../imges/cvd-diamonds-the-newest-.jpg);
+}
+
+.blog-img23 {
+	background-image: url(../imges/the-impact-of-lab-grown-diamonds-on-the-jewelry-market-in-2022.jpg);
+}
+
+.blog-img24 {
+	background-image: url(../imges/The-4-Of-Diamonds-thumb.jpg);
+}
+
+.blog-img25 {
+	background-image: url(../imges/Lab-Grown-Diamonds-Are-Eco-friendly-Alternative.jpg);
+}
+
+.blog-img26 {
+	background-image: url(../imges/what-is-the-difference-between-natural-and-man-made-diamonds.jpg);
+}
+
+.blog-img27 {
+	background-image: url(../imges/does-the-gia-grade-lab-grown-diamonds.jpg);
+}
+
+.blog-img28 {
+	background-image: url(../imges/10-facts-thumb.jpg);
+}
+
+.blog-img29 {
+	background-image: url(../imges/5-facts-thumb.jpg);
+}
+
+.blog-img30 {
+	background-image: url(../imges/Diamond-grows-in-the-lab--The-best-company-in-the-US.jpg);
+}
+
+.blog-img31 {
+	background-image: url(../imges/complete-guide-of-diamond-clarity.jpg);
+}
+
+.blog-img32 {
+	background-image: url(../imges/a-dream-to-reality-lab-created-diamonds.jpg);
+}
+
+.blog-img33 {
+	background-image: url(../imges/10-things-you-should-know-about-lab-grown-diamonds.jpg);
+}
+
+.blog-img34 {
+	background-image: url(../imges/blog-list-2.jpg);
+}
+
+.blog-img35 {
+	background-image: url(../imges/blogs-1.jpg);
+}
+
+.firstBlog div {
+	font-size: 128px;
+	font-family: var(--body-font-family);
+}
+
+.caption {
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	transform: translateX(0%) translateY(0%);
+	width: 60%;
+	z-index: 9;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.caption h1 {
+	width: 70%;
+	font-family: var(--body-font-family);
+	color: black;
+}
+
+.firstBlog p {
+	font-family: var(--body-font-family);
+	font-size: 24px;
+	font-weight: 400;
+	width: 65%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.firstBlog button {
+	border: 0;
+	background-color: #A4C89A;
+	color: #024638;
+	width: 170px;
+	height: 37px;
+}
+
+
+
+/* inner blogs */
+
+.blogImg {
+	background-image: url(../imges/firstBlog.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.contain-area {
+	background-color: #F9F9F9;
+	width: 100%;
+	height: auto;
+	padding: 15%;
+}
+
+.first-pare {
+	/* width: 100%; */
+	text-align: justify;
+}
+
+.first-pare p {
+	font-family: var(--body-font-family);
+	letter-spacing: 2px;
+}
+
+.second-pare p {
+	font-family: var(--body-font-family);
+	letter-spacing: 2px;
+}
+.first-pare span{
+	font-family: var(--body-font-family);
+	font-weight: 100;
+	font-size: 13px;
+}
+.first-pare .inner-title-1{
+	font-family: var(--body-font-family);
+	font-size: 30px;
+	font-weight: 500;
+}
+.third-pare p{
+	font-family: var(--body-font-family);
+	letter-spacing: 2px;
+}

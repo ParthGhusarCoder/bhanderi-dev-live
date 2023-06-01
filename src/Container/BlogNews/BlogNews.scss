@@ -1,0 +1,238 @@
+.blog-news-page {
+  .news-hero {
+    background-image: url("../../imges/news-blog-slide-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    .news-wrapper {
+      padding: 264px 0 153px;
+      .hash-title {
+        font-family: "Prumo Deck";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 128px;
+        line-height: 154px;
+        text-transform: capitalize;
+      }
+      .news-title {
+        margin-top: 51px;
+        font-family: "Prumo Deck";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 77px;
+        text-transform: capitalize;
+      }
+      .sub-news-title {
+        margin-top: 59px;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 39px;
+        text-transform: capitalize;
+      }
+      .read-more-btn {
+        border: none;
+        outline: none;
+        padding: 9px 51px;
+        margin-top: 77px;
+        background-color: #a4c89a;
+        color: #024638;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 19px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .container {
+    .blog-news-title {
+      margin: 100px 0;
+      font-family: "Prumo Deck";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 77px;
+      text-transform: capitalize;
+      text-align: center;
+      color: #000000;
+    }
+  }
+  .card {
+    background-color: #024638;
+    color: #fff;
+    height: 100%;
+    .card-img-top {
+      height: 252px;
+    }
+    .card-body {
+      height: 100%;
+      //   min-height: 412px;
+      .card-title {
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        .date {
+          margin-top: 20px;
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 19px;
+        }
+      }
+      .card-text {
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        text-transform: capitalize;
+        margin-top: 18px;
+      }
+      .read-more-btn {
+        margin-top: 40px;
+        padding: 4px 27px;
+        background-color: #a4c89a;
+        border: none;
+        outline: none;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #024638;
+      }
+    }
+  }
+  .slick-dots {
+    bottom: 0;
+    li button:before {
+      color: #fff;
+      opacity: 1;
+    }
+    li.slick-active button:before {
+      color: #a4c89a;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .blog-news-page {
+    .news-hero {
+      .news-wrapper {
+        padding: 150px 0 100px;
+        .hash-title {
+          font-size: 100px;
+          line-height: 118px;
+        }
+        .news-title {
+          font-size: 57px;
+          line-height: 67px;
+          margin-top: 40px;
+        }
+        .sub-news-title {
+          margin-top: 40px;
+        }
+        .read-more-btn {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .blog-news-page {
+    .news-hero {
+      .news-wrapper {
+        padding: 100px 0 70px;
+        .hash-title {
+          font-size: 72px;
+          line-height: 80px;
+        }
+        .news-title {
+          font-size: 43px;
+          line-height: 50px;
+        }
+        .sub-news-title {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        .read-more-btn {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .blog-news-page {
+    .news-hero {
+      .news-wrapper {
+        padding: 100px 0 70px;
+        .hash-title {
+          font-size: 64px;
+          line-height: 70px;
+        }
+        .news-title {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        .sub-news-title {
+          font-size: 16px;
+          line-height: 20px;
+          margin-top: 30px;
+        }
+        .read-more-btn {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .blog-news-page {
+    .container {
+      .blog-news-title {
+        font-size: 50px;
+        line-height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-news-page {
+    .news-hero {
+      .news-wrapper {
+        padding: 100px 0 70px;
+        .hash-title {
+          font-size: 50px;
+          line-height: 60px;
+        }
+        .news-title {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        .sub-news-title {
+          font-size: 16px;
+          line-height: 20px;
+          margin-top: 30px;
+        }
+        .read-more-btn {
+          padding: 9px 35px;
+        }
+      }
+    }
+  }
+}

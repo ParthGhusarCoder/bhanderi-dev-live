@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" integrity="sha512-wtjMa8AnvUyCbLxFg1jLR88gSACq81IiYgtIVdeNo3k+M8rdo4JdfScn7WxbZDsxZxFyDOEpMqOvYCzpSM6hnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+    integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+    integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script>
+    function inVisible(element) {
+      //Checking if the element is
+      //visible in the viewport
+      var WindowTop = $(window).scrollTop();
+      var WindowBottom = WindowTop + $(window).height();
+      var ElementTop = element.offset().top;
+      var ElementBottom = ElementTop + element.height();
+      //animating the element if it is
+      //visible in the viewport
+      if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+        animate(element);
+    }
+
+    function animate(element) {
+      //Animating the element if not animated before
+      if (!element.hasClass('ms-animated')) {
+        var maxval = element.data('max');
+        var html = element.html();
+        element.addClass("ms-animated");
+        $({
+          countNum: element.html()
+        }).animate({
+          countNum: maxval
+        }, {
+          //duration 5 seconds
+          duration: 5000,
+          easing: 'linear',
+          step: function () {
+            element.html(Math.floor(this.countNum) + html);
+          },
+          complete: function () {
+            element.html(this.countNum + html);
+          }
+        });
+      }
+
+    }
+
+    //When the document is ready
+    $(function () {
+      //This is triggered when the
+      //user scrolls the page
+      $(window).scroll(function () {
+        //Checking if each items to animate are 
+        //visible in the viewport
+        $("#counter[data-max]").each(function () {
+          inVisible($(this));
+        });
+        $("#counter1[data-max]").each(function () {
+          inVisible($(this));
+        });
+        $("#counter2[data-max]").each(function () {
+          inVisible($(this));
+        });
+      })
+    });
+  </script>
+
+  <!-- <script>
+            window.addEventListener(
+        "load",
+        (event) => {
+          const $observedElement = document.querySelector(".slider-sec");
+          const $elementToModify = document.querySelector("#benifit-img");
+
+          const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: buildThresholdList(20),
+          };
+          const handleChangeImageOnIntersectEvent = changeElementOnIntersectEvent(
+            $elementToModify
+          );
+          createObserver($observedElement, handleChangeImageOnIntersectEvent, options);
+        },
+        false
+      );
+
+      function buildThresholdList(numSteps) {
+        const thresholds = [];
+
+        for (let i = 1.0; i <= numSteps; i++) {
+          let ratio = i / numSteps;
+          thresholds.push(ratio);
+        }
+
+        thresholds.push(0);
+        return thresholds;
+      }
+
+      function changeElementOnIntersectEvent(elementToModify) {
+        return function (entries, observer) {
+          entries.forEach((entry) => {
+            if (entry.intersectionRatio > 0.618) {
+              elementToModify.style.transform = `scale(${entry.intersectionRatio})`;
+              elementToModify.style.filter = `translateX(${
+                1 - entry.intersectionRatio
+              })`;
+            }
+          });
+        };
+      }
+
+      function createObserver(observedElement, handleIntersect, options) {
+        const observer = new IntersectionObserver(handleIntersect, options);
+        observer.observe(observedElement);
+      }
+    </script> -->
+  <script>
+    const intro = document.querySelector(".intro");
+    const video = intro.querySelector("video");
+    const text = intro.querySelector(".h1");
+    //END SECTION
+    const section = document.querySelector(".rsecton");
+    const end = section.querySelector(".rh1");
+
+    //SCROLLMAGIC
+    const controller = new ScrollMagic.Controller();
+
+    //Scenes
+    let scene = new ScrollMagic.Scene({
+      duration: 5000,
+      triggerElement: intro,
+      triggerHook: 0
+    })
+      // .addIndicators()
+      .setPin(intro)
+      .addTo(controller);
+
+    //Text Animation
+    const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+
+    let scene2 = new ScrollMagic.Scene({
+      duration: 3000,
+      triggerElement: intro,
+      triggerHook: 0
+    })
+      .setTween(textAnim)
+      .addTo(controller);
+
+    //Video Animation
+    let accelamount = 0.2;
+    let scrollpos = 0;
+    let delay = 0;
+
+    scene.on("update", e => {
+      scrollpos = e.scrollPos / 700;
+    });
+
+    setInterval(() => {
+      delay += (scrollpos - delay) * accelamount;
+      console.log(scrollpos, delay);
+
+      video.currentTime = delay;
+    }, 75);
+  </script>
+
+
+
+
+
+
+  <!-- slider script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerGroup: 1,
+      loop: true,
+      fade: true,
+      grabCursor: true,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        500: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        868: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1000: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1250: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+  <script>
+    plugins: [
+      // other plugins,
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      }),
+    ],
+      $('.loop').owlCarousel({
+        center: true,
+        items: 1,
+        loop: false,
+        margin: 10,
+        responsive: {
+          480: {
+            items: 1
+          }
+        }
+      });
+
+
+  </script>
+
+  <!-- <script>
+    function accordionBuild(el) {
+      el.classList.add('js-accordion');
+      el.setAttribute('id', 'accordionGroup');
+      el.setAttribute('role', 'presentation');
+      Array.prototype.slice.call(el.querySelectorAll('.nav-multi-col__column')).forEach(function (column) {
+        const panel = column.querySelector('.nav-multi-col__panel');
+        panel.setAttribute('hidden', '');
+        panel.classList.add('js-accordion-panel');
+        const title = column.querySelector('.nav-multi-col__heading');
+        title.parentElement.classList.add('js-accordion-trigger');
+        title.classList.add('js-accordion-title');
+      });
+    }
+
+    function accordionDestroy(el) {
+      el.classList.remove('js-accordion');
+      el.removeAttribute('id');
+      el.removeAttribute('role');
+      Array.prototype.slice.call(el.querySelectorAll('.nav-multi-col__column')).forEach(function (column) {
+        const panel = column.querySelector('.nav-multi-col__panel');
+        panel.removeAttribute('hidden');
+        panel.classList.remove('js-accordion-panel');
+        const title = column.querySelector('.nav-multi-col__heading');
+        title.parentElement.classList.remove('js-accordion-trigger');
+        title.classList.remove('js-accordion-title');
+      });
+    }
+
+    function accordion() {
+      Array.prototype.slice.call(document.querySelectorAll('.js-accordion')).forEach(function (accordion) {
+
+        // Create the array of toggle elements for the accordion group
+        const triggers = Array.prototype.slice.call(accordion.querySelectorAll('.js-accordion-trigger'));
+        const panels = Array.prototype.slice.call(accordion.querySelectorAll('.js-accordion-panel'));
+
+        accordion.onclick = function foo(event) {
+          const target = event.target;
+
+          if (target.classList.contains('js-accordion-trigger')) {
+            // Check if the current toggle is expanded.
+            const isExpanded = target.getAttribute('aria-expanded') == 'true';
+            const active = accordion.querySelector('[aria-expanded="true"]');
+            console.log(isExpanded);
+
+            if (!isExpanded) {
+              // Set the expanded state on the triggering element
+              target.setAttribute('aria-expanded', 'true');
+              // Hide the accordion sections, using aria-controls to specify the desired section
+              document.getElementById(target.getAttribute('aria-controls')).removeAttribute('hidden');
+              // Hide the plus icon.
+              target.querySelector('svg').classList.remove('fa-plus');
+              // Show the minus icon.
+              target.querySelector('svg').classList.add('fa-minus');
+            }
+            else if (isExpanded) {
+              // Set the expanded state on the triggering element
+              target.setAttribute('aria-expanded', 'false');
+              // Hide the accordion sections, using aria-controls to specify the desired section
+              document.getElementById(target.getAttribute('aria-controls')).setAttribute('hidden', '');
+              // Hide the minus icon.
+              target.querySelector('svg').classList.remove('fa-minus');
+              // Show the plus icon.
+              target.querySelector('svg').classList.add('fa-plus');
+            }
+
+            event.preventDefault();
+          }
+        }
+
+        // Bind keyboard behaviors on the main accordion container
+        accordion.addEventListener('keydown', function (event) {
+          const target = event.target;
+          const key = event.which.toString();
+          // 33 = Page Up, 34 = Page Down
+          const ctrlModifier = (event.ctrlKey && key.match(/33|34/));
+
+          // Is this coming from an accordion header?
+          if (target.classList.contains('js-accordion-trigger')) {
+            // Up/ Down arrow and Control + Page Up/ Page Down keyboard operations
+            // 38 = Up, 40 = Down
+            if (key.match(/38|40/) || ctrlModifier) {
+              const index = triggers.indexOf(target);
+              const direction = (key.match(/34|40/)) ? 1 : -1;
+              const length = triggers.length;
+              const newIndex = (index + length + direction) % length;
+
+              triggers[newIndex].focus();
+
+              event.preventDefault();
+            }
+            else if (key.match(/35|36/)) {
+              // 35 = End, 36 = Home keyboard operations
+              switch (key) {
+                // Go to first accordion
+                case '36':
+                  triggers[0].focus();
+                  break;
+                // Go to last accordion
+                case '35':
+                  triggers[triggers.length - 1].focus();
+                  break;
+              }
+
+              event.preventDefault();
+            }
+          }
+          else if (ctrlModifier) {
+            // Control + Page Up/ Page Down keyboard operations
+            // Catches events that happen inside of panels
+            panels.forEach(function (panel, index) {
+              if (panel.contains(target)) {
+                triggers[index].focus();
+
+                event.preventDefault();
+              }
+            });
+          }
+        });
+      });
+    }
+
+    // Checks screen width.
+    function mobileCheck(mq) {
+      if (mq.matches) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+
+    const mq = window.matchMedia("(max-width: 1024px)");
+    let timeout;
+
+    ['load', 'resize'].forEach(evt =>
+      window.addEventListener(evt, function (e) {
+        // e.target.removeEventListener(e.type, arguments.callee);
+
+        if (!timeout) {
+          timeout = setTimeout(function () {
+
+            // Reset timeout
+            timeout = null;
+            const isMobile = mobileCheck(mq);
+            if (isMobile) {
+              accordionBuild(document.querySelector('.nav-multi-col'));
+              accordion();
+            }
+            else if (!isMobile) {
+              accordionDestroy(document.querySelector('.nav-multi-col'));
+            }
+          }, 500);
+        }
+      })
+    )
+
+  </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha512-ANkGm5vSmtDaoFA/NB1nVJzOKOiI4a/9GipFtkpMG8Rg2Bz8R1GFf5kfL0+z0lcv2X/KZRugwrAlVTAgmxgvIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha512-hJSZLjaUow3GsiAkjUBMxN4eaFysMaBvg7j6mkBeo219ZGmSe1eVhKaJJAj5GzGoD0j0Gr2/xNDzjeecdg+OCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<script src="../src/js/script.js"></script>
+<script src="../src/js/swiper-bundle.min.js"></script>
+
+</html>
